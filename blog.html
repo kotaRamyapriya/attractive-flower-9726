@@ -1,0 +1,624 @@
+<html>
+    <head>
+        <title>Blog</title>
+        <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&family=Slackey&family=Sonsie+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&family=Slackey&family=Sonsie+One&display=swap" rel="stylesheet">       
+        <style>
+            
+        #container{
+            display: grid;
+            grid-template-columns: repeat(2,650px);
+            grid-template-rows:repeat(2,450px);
+            border: 1px solid yellow;
+            gap: -40%;
+            height: 520px;
+        }
+        #container>div{
+            border: 1px solid green;
+            margin-left: 10%;
+        }
+        #container>div>img{
+            width:100%;
+            height: 360px;
+            margin-top: 8%;
+            cursor: pointer;
+        }
+        #container>div>p{
+            color: gray;
+            cursor: pointer;
+        }
+        #container>div>p,i{
+            margin-left: 1%;
+            font-family: sans-serif;
+            font-size: 95%;
+        }
+        #container>div>p+i,span{
+            color: black;
+            font-family: sans-serif;
+            font-size: 95%;
+            margin-left: 2%;
+            cursor: pointer;
+        }
+        #container>div>p+h1{
+            font-size: 280%;
+            font-family: sans-serif ;
+            cursor: pointer;
+            
+        }
+        #container>div>p+h1:hover{
+            text-decoration: underline;
+        }
+        #container>div>p+h1+p{
+            color: black;
+            font-size: 100%;
+            cursor: text;
+            word-spacing: 6px;
+            font-family: sans-serif;
+            
+        }
+        #part-1but{
+            margin-left:2%;
+            border: 0px;
+            cursor: pointer;
+            
+        }
+        #container>div>p+h1+p+p+img{
+            width: 10%;
+            height: 52px;
+            border-radius: 50px;
+            margin-top:0%;
+            margin-left: 3%;
+            border: 2px solid blue;
+            cursor: pointer;
+            
+        }
+        #container>div>p+h1+p+p+img+h2{
+            margin-top: -9%;
+            margin-left: 15%;
+            font-size: 22px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+        #container>div>p+h1+p+p+img+h2+p{
+            margin-top: -3%;
+            margin-left: 15%;
+            font-size: 15px;
+            font-family: sans-serif;
+           color: black;
+           cursor: pointer;
+        }
+        hr{
+            color: yellowgreen;
+        }
+        #container1{
+            display: grid;
+            grid-template-columns: repeat(2,400px);
+            grid-template-rows: repeat(2,580px);
+            border: 1px solid green;
+            gap: 4%;
+        }
+        #container1>div{
+            border: 1px solid yellow;
+            height: 510px;
+            width: 100%;
+            margin-top:8%;
+            margin-left: 15%;
+            cursor: pointer;
+        }
+     #container1>div:nth-child(3){
+            margin-top: -6%;
+            margin-left: 15%;
+        }
+        #container1>div:nth-child(4){
+            margin-top: -6%;
+        }
+       #container1>div>img{
+            width: 100%;
+            height: 230px;
+            cursor: pointer;
+        }
+        #container1>div>img:hover{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+        #container1>div>img+p{
+            color: grey;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+        #container1>div>img+p+h3{
+            font-family: sans-serif;
+            word-spacing: 5px;
+            
+        }
+        #container1>div>img+p+h3:hover{
+            text-decoration: underline;
+        }
+        #container1>div>img+p+h3+p{
+            color: gray;
+            cursor: pointer;
+        }
+        #container1>div>img+p+h3+p+i{
+            margin-left: 50%;
+            cursor: pointer;
+
+        }
+        #part-1but{
+            margin-left: 20%;
+            cursor: pointer;
+
+         }
+         #container1>div>img+p+h3+p+p{
+            font-family: sans-serif;
+           font-size: 100%;
+           color: grey;
+           cursor: pointer;
+         }
+         #container1>div>img+p+h3+p+p+img{
+            width: 10%;
+            height: 40px;
+            border-radius: 50px;
+            cursor: pointer;
+
+         }
+         #container1>div>img+p+h3+p+p+img+h4{
+            color:black;
+            margin-top: -8%;
+            margin-left: 15%;
+            font-family: sans-serif;
+            cursor: pointer;
+
+            
+         }
+          #founder{
+            color: gray;
+            font-family: sans-serif;
+            cursor: pointer;
+
+          }
+          .image1{
+            color:black;
+            margin-top: 10%;
+            margin-left: 0%;
+            font-family: sans-serif;
+            cursor: pointer;
+
+          }
+          .image2{
+            color:black;
+            margin-top: 18%;
+            margin-left: 0%;
+            font-family: sans-serif;
+          }
+          hr{
+            border-left: 1px solid black;
+            height: 1150px;
+            position:absolute;
+            left: 70%;
+            color: lightblue
+          }
+          #container2{
+           margin-top: -87.3%;
+            border: 1px solid green;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(1,100px);
+            
+            margin-left: 73%;
+          }
+          #container2>div{
+            height: 200px;
+            width:100% ;
+            border: 1px solid green;
+            margin-top: 6%;
+          }
+          #container2>div:hover{
+            color: grey;
+            cursor: pointer;
+          }
+          #l1{
+           border: 1px solid lightslategray;
+          margin-top: 3%;
+          margin-left: 3%;
+           width: 25.5%;
+           height: 0px;
+           
+          }
+          #container2>.smalldiv{
+            margin-top: 20%;
+            height: 220px;
+          }
+          #container2>.smalldiv1{
+            margin-top: -10%;
+            height: 220px;
+          }
+          i{
+            margin-left: 5%;
+          }
+          .paraheading{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-top: -6%;
+            margin-left: 20%;
+          }
+          #googlefont1{
+            font-family: 'Slackey', cursive;
+            margin-left: 10%;
+            font-size: 70px;
+            margin-top: 5%;
+          }
+          .undername{
+            font-size: 13px;
+            margin-left: 25%;
+            margin-top: -18%;
+          }
+          .underpara{
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 8%;
+            
+          }
+          #hr1{
+            border: 1px solid lightslategray;
+            width: 110%;
+            margin-top: 3%;
+            margin-left: -80%;
+            height: 0px;
+          }
+          #container3>div{
+            margin: auto;
+            border: 1px solid green;
+           /* margin-left: 50%;*/
+            width: 50%;
+            margin-top: 10%;
+          }
+          #container3>div>h1{
+            font-family: sans-serif;
+           margin-left: 20%;
+          }
+          #container3>div>h1+p{
+            text-align: center;
+            width: 70%;
+            margin-left: 15%;
+            font-family: sans-serif;
+          
+          }
+          #container3>div>h1+p+input{
+            height: 50px;
+            width: 50%;
+            margin-left: 20%;
+            color: grey;
+
+          }
+          #container3>div>h1+p+input+button{
+            height: 50px;
+            width: 20%; 
+            background-color: rgb(233, 97, 97);
+            color: whitesmoke;
+            border: 0px solid wheat;
+            border-radius: 4px;
+            font-size: 20px;
+            margin-left: 3%;
+          }
+          #container3>div>h1+p+input+button:hover{
+            color: white;
+            cursor: pointer;
+          }
+          #container4{
+           background-color:#231F20;
+            height: 1200px;
+            width: 100%;
+            margin-top: 10%;
+          }
+          #container4>div{
+            height: 200px;
+            width: 100%;
+            border: 1px solid green;
+            
+          }
+          #container4>div>img{
+            width: 85%;
+            height: 250px;
+            margin-left: 7%;
+            margin-top: 3%;
+          }
+          #container4>div>img+p{
+            color: wheat;
+            font-family: sans-serif;
+            font-size: 15px;
+            margin-left: 7%;
+            cursor: pointer;
+          }
+          #container4>div>img+p+h1{
+            font-family: sans-serif;
+            font-size:25px ;
+            color: white;
+            margin-left: 7%;
+            cursor: pointer;
+          }
+          #container4>div>img+p+h1:hover{
+            color: green;
+          }
+          #container4>div>img+p+h1+p{
+            color: white;
+            width: 40%;
+            font-family: sans-serif;
+            margin-left: 7%;
+            cursor: pointer;
+          }
+          #container4>div>img+p+h1+p+img{
+            width: 40%;
+            cursor: pointer;
+          }
+          #container4>div>img+p+h1+p+img+p{
+            margin-left: 10%;
+            color: white;
+            font-family: sans-serif;
+            margin-top: 2%;
+            font-size: 10px;
+          }
+          #container4>div>img+p+h1+p+img+p:hover{
+            color: green;
+          }
+          #container4>div>img+p+h1+p+img+p+i{
+            color: white;
+            margin-left: 8%;
+            font-size: 210%;
+            margin-top: -1%;
+          }
+          #container4>div>img+p+h1+p+img+p+i:hover{
+            color: green;
+          }
+          #container4>div>img+p+h1+p+img+p+i+span{
+            margin-left: 0.5%;
+            color: white;
+            font-size: 20px;
+          }
+          #container4>div>img+p+h1+p+img+p+i+span:hover{
+            color: green;
+          }
+          #container4>div>img+p+h1+p+img+p+i+span+div>i{
+            color: white;
+            margin-left: 25%;
+            font-size: 250%;
+           cursor: pointer;
+           margin-top: -190%;
+          
+          }
+          #container4>div>img+p+h1+p+img+p+i+span+div>i:hover{
+            color: green;
+          }
+          #container4>div>img+p+h1+p+img+p+i+span+div>i+span{
+            color: white;
+            margin-left: 2%;
+            margin-top: -15%;
+           
+          }
+          #container4>div>img+p+h1+p+img+p+i+span+div>i+span:hover{
+            color: green;
+          }
+          #container4>div>div{
+            height: 50px;
+          /*  border: 1px solid green;*/
+            width: 10%;
+            margin-top: -1.2%;
+            margin-left: 22%;
+          }
+          #commondiv{
+            color: white;
+            margin-left: 25%;
+            font-size: 250%;
+           cursor: pointer;
+           margin-top: -190%;
+          }
+          #commondiv>i{
+            margin-top: -38%;
+            margin-left: 130%;
+            font-size: 60%;
+            text-transform: lowercase;
+          }
+          #commondiv>i:hover{
+            color: green;
+          }
+         
+          #line{
+            height: 500px;
+            color: whitesmoke;
+            margin-top: -60%;
+            margin-left: -18%;
+          }
+          #container5{
+            display: grid;
+            grid-template-columns: repeat(2,290px);
+            grid-template-rows: repeat(2,190px);
+            gap: 5%;
+            margin-left: 53%;
+            margin-top: -60%;
+          }
+          #container5>div{
+            border: 1px solid green; 
+          }
+          #container5>div>img{
+            width: 100%;
+          }
+          h2{
+            color: white;
+          }
+        
+        </style>
+    </head>
+    <body>
+        <div id="container">
+          <div><img src="https://buffer.com/resources/content/images/size/w600/2022/07/kelly-sikkema-XX2WTbLr3r8-unsplash.jpg" alt="part-1 in page-1"></div>
+          <div>
+            <p>Publication<i class="fa-solid fa-angle-right"></i><span>Flow</span></p>
+            <h1>How These Small Bussiness Give Back :Real Examples From 5 Bussiness</h1>
+            <p>Including a charitable component to your small business can make you feel more fulfilled while also adding value to your brand. These examples from 5 companies will inspire you to give back to your community.</p>
+            <p>Jul 19,2022 <i class="fa-brands fa-readme"></i><span>8 min read</span> <button id="part-1but">Resources</button></p>
+            <img src="https://buffer.com/resources/content/images/size/w100/2022/03/Untitled-design.png" alt="part-1 in page-1">
+            <h2>Umber Bhatti</h2>
+            <p>Content Writer @ Buffer</p>
+        </div> </div>
+        
+
+
+
+
+
+
+        <hr>
+        <div id="container1">
+            <div>
+                <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/07/markus-spiske-fr7SSrc43AQ-unsplash--1-.jpg" alt="part-1,page-1">
+                <p>Publication<i class="fa-solid fa-angle-right"></i><span>Flow</span></p>
+                <h3>What I've Learned About Getting Clients 11 years into Running a PR and Social Agency</h3>
+                <p>Jul 18,2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-readme"></i><span>8 min read</span> <button id="part-1but">Flow</button></p>
+                <p>It's not easy to build an agency, much less maintain one for over ten years, but that's what Chris Norton has done with Prohibition PR. In this article, he shares the lessons he has learned from eleven years of running a PR and social media agency.</p>
+                <img src="https://buffer.com/resources/content/images/size/w100/2022/07/chrisnorton.png" alt="page-1,part-2">
+                <h4>Chris Norton,<span id="founder">Founder of Prohibition</span></h4>
+            </div>
+            <div>
+                <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/07/ASK-BUFFER-05.png">
+                <p>Publication<i class="fa-solid fa-angle-right"></i><span>Flow</span></p>
+                <h3>Ask:Buffer Will Scheduling My Social Media Post Affect My Enagagement</h3>
+                <p>Jul 14,2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-readme"></i><span>4 min read</span> <button id="part-1but">Flow</button></p>
+                <p>There's a myth that using third-party scheduling tools will reduce your engagement. This article presents the existing research that debunks this and advice for boosting your engagement.</p>
+                <img class="image1"src="https://buffer.com/resources/content/images/size/w100/2022/03/B6060E07-7A0E-4C6C-82EE-C654EA065314_1_102_o.jpeg">
+                <h4>Tamilore Oladipo,<span id="founder">Content Writer @ Buffer</span></h4>
+            </div>
+            <div>
+                <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/07/britt-gaiser-RxbuKAEW0ys-unsplash--1-.jpg">
+                <p>Publication<i class="fa-solid fa-angle-right"></i><span>Flow</span></p>
+                <h3>5 Steps for Dealing with Social Media Negativity</h3>
+                <p>Jul 13,2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-readme"></i><span>7 min read</span> <button id="part-1but">Flow</button></p>
+                <p>It’s essential to create a clear and concise policy for what to do when you encounter negativity on your social media so you can tackle it before it becomes a problem for your business</p>
+                <img class="image1"src="https://buffer.com/resources/content/images/size/w100/2022/03/B6060E07-7A0E-4C6C-82EE-C654EA065314_1_102_o.jpeg">
+                <h4>Tamilore Oladipo,<span id="founder">Content Writer @ Buffer</span></h4>
+            </div>
+            <div>
+                <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/resources/content/images/size/w600/2022/07/pexels-rodnae-productions-6115196.jpg">
+                <p>Publication<i class="fa-solid fa-angle-right"></i><span>Flow</span></p>
+                <h3>How Charitable Giving Helped Us Take Our Dog Daycare to $1M in Revenue</h3>
+                <p>Jul 13,2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-readme"></i><span>7 min read</span> <button id="part-1but">Flow</button></p>
+                <p>Many business owners may worry about the extra cost of charitable giving</p>
+                <img class="image2"src="https://buffer.com/resources/content/images/size/w100/2022/03/B6060E07-7A0E-4C6C-82EE-C654EA065314_1_102_o.jpeg">
+                <h4>Susan and Michael Perlman Owners of the Dogto,<span id="founder">Owners of the Dogtopia</span></h4>
+            </div>
+            
+        
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+        <div  id="container2">
+            <div>
+                <i class="fa-brands fa-readme"></i>
+                <p class="paraheading">Publication</p>
+               <h1 id="googlefont1">Flow</h1>
+                <p class="undername">Marketing Blog</p>
+                <p class="underpara">Real-life marketing stories, trends, and strategies from social media’s most engaging brands.</p>
+            </div>
+            <div>
+               
+               <h1 id="googlefont1">Open</h1>
+                <p class="undername">CULTURE BLOG</p>
+                <p class="underpara">In addition to its intrinsic value, culture provides important social and economic benefits.</p>
+            </div>
+            <div>
+                <h1 id="googlefont1">overfl/</h1>
+                <p class="undername">engineering blog</p>
+                <p class="underpara">In addition to its intrinsic value, culture provides important social and economic benefits.</p> 
+            </div>
+            <hr id="l1">
+            <div class="smalldiv">
+                <h1 id="googlefont1">Break</h1>
+                <p class="undername">Bands</p>
+                <p class="underpara">In addition to its intrinsic value, culture provides important social and economic benefits.</p> 
+            </div>
+            <div class="smalldiv1">
+                <h1 id="googlefont1">Social</h1>
+                <p class="undername">Media</p>
+                <p class="underpara">In addition to its intrinsic value, culture provides important social and economic benefits.</p> 
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+       
+        <hr id="hr1">
+        <div id="container3">
+            <div>
+            <h1>Subscribe to our newsletter</h1>
+            <p>We’ll keep you in the loop on our best advice and strategies for social media marketing and growing a small business.</p>
+            <input type="email" placeholder="Your Email address">
+            <button>Subscribe</button>
+        </div>
+        </div>
+         
+
+
+
+
+
+
+        <div id="container4">
+            <div>
+             <img src="https://buffer.com/resources/assets/img/bb-banner.jpg?v=92a4992b7a" alt="1">
+             <p>Nov 26,2019</p>
+             <h1>Next Up</h1>
+             <p>After launching its first brand to market, the team reflects on the journey and what’s next for Pattern.</p>
+             <img src="https://buffer.com/resources/content/images/size/w600/2020/04/5db0229b11163868e90e9f89_6_v2.jpg" alt="1">
+             <p>Listen On</p>
+             <i class="fa-solid fa-podcast"></i><span>Apple Podcast</span>
+             <div>
+             <i class="fa-brands fa-spotify"></i><span id="span">Spotify</span>
+               </div>
+             <div id="commondiv">
+                <i class="fa-solid fa-anchor">Anchor</i>
+               </div> 
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <hr id="line">
+        
+        <div id="container5">
+            <div>
+                <img src="https://buffer.com/resources/content/images/size/w600/2020/04/5daf01e702af9047dd7c6603_1_v2.jpg" alt="1">
+            </div>
+            <div></div>
+            <div>
+                <img src="https://buffer.com/resources/content/images/size/w600/2020/04/5db02288a0aa2b7906b7c63c_3_v2.jpg" alt="1">
+            </div>
+            <div></div>
+
+        </div>
+    </body>
+</html>
+
+
+    
