@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+     #container1{
+      /*  border: 1px solid green;*/
+        height: 70px;
+        width: 100%;
+        display: flex;
+        
+     }
+     #container1>div{
+        width: 100%;
+        height: 70px;
+      /* border: 1px solid yellow;*/
+     }
+     #container1>div>i{
+        font-size: 300%;
+        margin-left: 20%;
+        cursor: pointer;
+     }
+     #container1>div>i+h2{
+          margin-top: -9%;
+          font-size: 30px;
+          font-family: monospace;
+          margin-left: 35%;
+          cursor: pointer;
+     }
+     #nav{
+        display: grid;
+        grid-template-columns: repeat(5,100px);
+        grid-template-rows: repeat(1,40px);
+        
+     }
+     #nav>div{
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-top: 20%;
+        cursor: pointer;
+     }
+      
+     #login{
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(1,50px);
+       
+     }
+     #login>div{
+        color: blue;
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-left: 70%;
+        margin-top: 10%;
+        cursor: pointer;
+     }
+     #login>div+button{
+        margin-top: 6%;
+        height: 45px;
+        margin-left: 5%;
+        width: 100%;
+        color: white;
+        background-color: blue;
+        border: 0px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+     }
+     #login>div+button:hover{
+        background-color: darkblue;
+     }
+     #container2{
+        display: flex;
+       /* border: 1px solid green;*/
+        height: 400px;
+        width: 100%;
+        margin-top: 7%;
+     }
+     #container2>div{
+       /* border: 1px solid yellow;*/
+        height: 400px ;
+        width: 50%;
+        margin-top: 0%;
+     }
+     #container2>div>h1{
+        font-family: sans-serif;
+        font-size: 35px;
+        width: 80%;
+
+     }
+     #container2>div>h1+p{
+        font-family: sans-serif;
+        width: 90%;
+        font-size: 18px;
+        word-spacing: 5px;
+        line-height: 140%;
+     }
+     #container2>div>h1+p+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        background-color: blue;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+     }
+     #container2>div>h1+p+button:hover{
+        background-color: darkblue;
+     }
+     #container2>div>h1+p+button+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        border: 1px solid blue;
+        font-size: 20px;
+        color:blue;
+        background-color: white;
+        margin-left: 5%;
+        cursor: pointer;
+     }
+     #container2>div>h1+p+button+button:hover{
+        background-color: lightsteelblue;
+        color: blue
+     }
+     #container2>div>img{
+        width: 100%;
+        height: 400px;
+     }
+     #container3{
+            display: grid;
+            grid-template-columns: repeat(6,240px);
+            grid-template-rows: repeat(1,100px);
+          /*  border: 1px solid green ;*/
+            gap:0%;
+            margin-top: 10%;
+        }
+        #container3>div{
+            height: 60px;
+            width: 100%;
+          /*  border: 1px solid yellow;*/
+            margin-left: 10%;
+        }
+       #container3>div{
+        font-family: 'Sonsie One';
+        font-size: 20px;
+        color: grey;
+       }
+       #container3>div:nth-child(1){
+        font-size: 28px;
+        font-family: fantasy;
+        margin-left: 20%;
+      
+       }
+       #container3>div:nth-child(2){
+        font-size: 30px;
+        font-family:'Courier New', Courier, monospace;
+        margin-left: 10%;
+      
+       }
+       #container3>div:nth-child(3){
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        font-size: 33px;
+        margin-left: -10%;
+        
+       }
+       #container3>div:nth-child(4){
+        font-size: 39px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left: -30%;
+       }
+       #container3>div:nth-child(5){
+        font-size: 39px;
+        font-family: cursive;
+        margin-left: -40%;
+       }
+       #container3>div:nth-child(6){
+        font-size: 39px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-left: -30%;
+       }
+       #container4{
+        background-image: url(https://buffer.com/static/misc/buffer-loop-v2.svg);
+        width: 100%;
+        height: 200px;
+        margin-top: 5%;
+       }
+       #container5{
+        text-align: center;
+        margin-top: 10%;
+       }
+       #container5>h1{
+        font-family: sans-serif;
+       }
+       #container5>h1+p{
+        width: 45%;
+        font-family: sans-serif;
+        margin-left: 30%;
+       }
+    
+
+      
+
+       #container6{
+        display: flex;
+     /*   border: 1px solid green;*/
+        height: 400px;
+        width: 100%;
+        margin-top: 15%;
+     }
+     #container6>div{
+     /*   border: 1px solid yellow;*/
+        height: 400px ;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 8%;
+     }
+     #container6>div>h3{
+        font-family: sans-serif;
+       
+        width: 100%;
+        color: blue;
+        
+
+     }
+     #container6>div>h1+p{
+        font-family: sans-serif;
+        width: 90%;
+        font-size: 18px;
+        word-spacing: 5px;
+        line-height: 140%;
+       
+     }
+     #container6>div>h1+p+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        background-color: blue;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+     }
+     #container6>div>h1+p+button:hover{
+        background-color: darkblue;
+     }
+     #container6>div>h1+p+button+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        border: 1px solid blue;
+        font-size: 20px;
+        color:blue;
+        background-color: white;
+        margin-left: 5%;
+        cursor: pointer;
+     }
+     #container6>div>h1+p+button+button:hover{
+        background-color: lightsteelblue;
+        color: blue
+     }
+     #container6>div>img{
+        width: 100%;
+        height: 400px;
+        margin-left: -10%;
+
+     }
+
+
+
+     #container7{
+        display: flex;
+      /*  border: 1px solid green;*/
+        height: 400px;
+        width: 100%;
+        margin-top: 15%;
+     }
+     #container7>div>img{
+        width: 100%;
+        height: 200px;
+        margin-left: -10%;
+
+     }
+     #container7>div{
+      /*  border: 1px solid yellow;*/
+        height: 400px ;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 8%;
+     }
+     #container7>div>h3{
+        font-family: sans-serif;
+       
+        width: 100%;
+        color: blue;
+        
+
+     }
+     #container7>div>h1+p{
+        font-family: sans-serif;
+        width: 90%;
+        font-size: 18px;
+        word-spacing: 5px;
+        line-height: 140%;
+       
+     }
+     #container7>div>h1+p+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        background-color: blue;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+     }
+     #container7>div>h1+p+button:hover{
+        background-color: darkblue;
+     }
+     #container7>div>h1+p+button+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        border: 1px solid blue;
+        font-size: 20px;
+        color:blue;
+        background-color: white;
+        margin-left: 5%;
+        cursor: pointer;
+     }
+     #container7>div>h1+p+button+button:hover{
+        background-color: lightsteelblue;
+        color: blue
+     }
+      
+     
+
+
+     #container8{
+        display: flex;
+     /*   border: 1px solid green;*/
+        height: 400px;
+        width: 100%;
+        margin-top: 15%;
+     }
+     #container8>div{
+      /*  border: 1px solid yellow;*/
+        height: 400px ;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 8%;
+     }
+     #container8>div>h3{
+        font-family: sans-serif;
+       
+        width: 100%;
+        color: blue;
+        
+
+     }
+     #container8>div>h1+p{
+        font-family: sans-serif;
+        width: 90%;
+        font-size: 18px;
+        word-spacing: 5px;
+        line-height: 140%;
+       
+     }
+     #container8>div>h1+p+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        background-color: blue;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+     }
+     #container8>div>h1+p+button:hover{
+        background-color: darkblue;
+     }
+     #container8>div>h1+p+button+button{
+        height: 50px;
+        width: 30%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+        border: 1px solid blue;
+        font-size: 20px;
+        color:blue;
+        background-color: white;
+        margin-left: 5%;
+        cursor: pointer;
+     }
+     #container8>div>h1+p+button+button:hover{
+        background-color: lightsteelblue;
+        color: blue
+     }
+     #container8>div>img{
+        width: 100%;
+        height: 400px;
+        margin-left: -10%;
+
+     }
+     #container9{
+        display: grid;
+        grid-template-columns: repeat(5,400px);
+        grid-template-rows: repeat(1,400%);
+        gap: 4%;
+       /* border: 1px solid green;*/
+        margin-top: 10%;
+     }
+   
+     #container9>div:nth-child(1){
+        width: 100%;
+        height: 350px;
+     /*   border: 1px solid green;*/
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     
+     }
+     #container9>div:nth-child(2){
+        width: 100%;
+        height: 350px;
+       /* border: 1px solid green;*/
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     #container9>div:nth-child(3){
+        width: 100%;
+        height: 350px;
+      /*  border: 1px solid green;*/
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     #container9>div:nth-child(4){
+        width: 100%;
+        height: 350px;
+     /*   border: 1px solid green;*/
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     #container9>div:nth-child(5){
+        width: 100%;
+        height: 350px;
+      /*  border: 1px solid green;*/
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     #container9>div:nth-child(6){
+        width: 100%;
+        height: 350px;
+      /*  border: 1px solid green;*/
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     }
+     #container9>div>img{
+        border-radius: 50px;
+        height: 100px;
+        width: 25%;
+       /* margin-top: -20%;*/
+        margin-left: 40%;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        
+        
+     }
+     #container9>div>img+p{
+        width: 70%;
+     margin-left: 18%;
+     text-align: center;
+     font-family: sans-serif;
+     line-height: 150%;
+     margin-top: 30%;
+     } 
+     #container9>div>img+p+h1{
+        color: gray;
+        font-family: cursive;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 10%;
+     }
+     #container9>div>img+p+h1+h3{
+        text-align: center;
+        margin-top: 5%;
+        font-family: sans-serif;
+        font-size: 15px;
+     }
+     #container9{
+        overflow: hidden;
+     }
+     #container9 div{
+       position: relative;
+       width: 400%;
+       margin: 0;
+       left: 0;
+       animation: 20s container9 infinite;
+     }
+     #container9 div img{
+        float:left;
+        width: 20%;
+     }
+     @keyframes container9{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -10%;
+        }
+     }
+     #container10 h3{
+        text-align: center;
+        color: blue;
+        margin-top: 10%;
+        font-family: sans-serif;
+     }
+     #container10>h3+h1{
+        font-family: sans-serif;
+        width: 40%;
+        text-align: center;
+        margin-left: 30%;
+     }
+     #container11{
+        display: flex;
+        height: 200px;
+        width: 100%;
+        margin-top: -20%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     }
+     #container11>div{
+            width: 100%;
+            height: 100px;
+          /*  border: 1px solid green;*/
+            margin: auto;
+            margin-left: 4%;
+            margin-top: 5%;
+        }
+        #container11>div>p{
+            text-align: center;
+        }
+        #container11>div>p+h1{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 23px;
+        }
+        #p1{
+            font-size: 50px;
+            margin-top: -8%;
+            color:blue;
+            font-family: monospace;
+        }
+        #p2{
+            font-size: 50px;
+            margin-top: -8%;
+            color:blue;
+            font-family: monospace;
+        }
+        #p3{
+            font-size: 50px;
+            margin-top: -8%;
+            color:blue;
+           font-family: monospace;
+           
+        }
+        #p4{
+            font-size: 50px;
+            margin-top: -8%;
+            color:blue;
+           font-family: monospace;
+           
+        }
+        #p1+h1{
+           margin-top: -14%;
+        }
+        #p2+h1{
+           margin-top: -14%;
+        }
+        #p3+h1{
+           margin-top: -14%;
+        }
+        #p4+h1{
+           margin-top: -14%;
+        }
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 5%;
+        }
+
+
+
+
+        #container12{
+        display: flex;
+     /*   border: 1px solid green;*/
+        height: 400px;
+        width: 100%;
+        margin-top: 15%;
+     }
+     #container12>div>img{
+        width: 100%;
+        height: 200px;
+        margin-left: -10%;
+
+     }
+     #container12>div{
+   /*     border: 1px solid yellow;*/
+        height: 400px ;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 8%;
+     }
+     #container12>div>h1{
+        font-family: sans-serif;
+        width: 100%;
+        margin-left: -17%;
+     }
+     #container12>div>h1+p{
+        font-family: sans-serif;
+        width: 100%;
+        font-size: 18px;
+        word-spacing: 5px;
+        line-height: 140%;
+       
+     }
+     #container12>div>h1+p+button{
+        height: 50px;
+        width: 40%;
+        margin-top: 5%;
+        border-radius: 5px;
+        border: 0px;
+       border:1px solid blue;
+        font-size: 20px;
+        color: blue;
+        cursor: pointer;
+        background-color: white;
+     }
+     #container12>div>h1+p+button:hover{
+        background-color: lightblue;
+     }
+     h3{
+        text-align: center;
+        font-size: 20px;
+        font-family: sans-serif;
+     }
+     #c11>img{
+        height: 70px;
+        width: 10%;
+        margin-left: 24%;
+        margin-top: 0%;
+       
+     }
+     #c22>img{
+        height: 70px;
+        width: 10%;
+        margin-left: 45%;
+        margin-top: -40%;
+    
+     }
+     #c33>img{
+        height: 70px;
+        width: 10%;
+        margin-left: 65%;
+        margin-top: -900%;
+       
+     }
+     #container13{
+              background-color: #2c4bff;
+              width: 100%;
+              height: 200px;
+             background-image: url(/static/background/triangle-green.svg);
+              background-image:  url(/static/background/planet@2x.png);
+              background-image:  url(/static/background/circle-pink.svg);
+              background-repeat: no-repeat;
+             background-size: 40px, 180px, 60px;
+              background-position: 120px 75px, -55px 160px, 88px 105%;
+              position: absolute;
+             /* top: 0px;*/
+             margin-top: 5%;
+             background-size: 150px;
+}
+
+         #container13>div>p{
+         margin-left: 18%;
+         color: white;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 35px;
+         width: 60%;
+         text-align: center;
+         padding-top: 6%;
+        
+         }
+         #container13>div>p+button{
+          background-color: rgb(189, 121, 121);
+          width: 15%;
+          height: 60px;
+          border: 0px ;
+          color: white;
+          margin-left: 40%;
+          font-size: 22px;
+          border-radius: 5%;
+          margin-top: 5%;
+         }
+         #container13>div>p+button:hover{
+          background-color: palevioletred;
+          color: white;
+          cursor: pointer;
+          
+         }
+        
+        
+         #container13{
+              background-image: url(https://buffer.com/static/background/circle-pink.svg),
+               url(https://buffer.com/static/background/planet@2x.png),
+              url(https://buffer.com/static/background/triangle-green.svg);
+              background-size: 150px;
+              width: 300px;
+            height: 300px;
+            border: 2px solid;
+             color: pink;
+             background-size: 150px, 180px, 190px;
+              background-position: 190px 75px, -55px 260px, 1058px -15%;
+             
+         }
+         #container13{
+            width: 100%;
+            height: 500px;
+         }
+
+         #container14{
+          width: 100%;
+          height: 500px;
+        /*  border: 1px solid green;*/
+          margin-top: 20%;
+         }
+         #container14>div{
+          width: 10%;
+          height: 50px;
+          margin-top: 5%;
+          color: black;
+          font-size: 50px;
+          font-family: sans-serif;
+          margin-left: 5%;
+         }
+        #container14>div+div{
+          margin-top: -3%;
+          margin-left: 45%;
+        
+        }
+        
+        td{
+          font-size: 20px;
+          font-family: sans-serif;
+          line-height: 36px;
+        
+        }
+        td:hover{
+          color: blue;
+        }
+        th{
+          font-size: 24px;
+          font-family: monospace;
+          text-align: left;
+          
+        }
+       /*  .c2:nth-child(2){
+            color: green;
+            padding-left: 10%;
+         }*/
+        #container15{
+            /*border: 1px solid green;*/
+            height: 100px;
+            width: 30%;
+            margin-top: -22%;
+        }
+        #container15>div>i{
+            color: black;
+            margin-left: 10%;
+            font-size: 30px;
+        }
+        #container15>div>i+h3{
+            margin-left: 10%;
+            color: black;
+        }
+        #container15>div>i+h3+button{
+            margin-left: 10%;
+            height: 30px;
+            width: 30%;
+            border: 1px solid blue;
+            border-radius: 10px;
+            background-color: white;
+            color: blue;
+        }
+        #container15>div>i+h3+button:hover{
+            background-color: skyblue;
+        }
+        #container15>div>i+h3+button+button{
+            margin-left: 10%;
+            height: 30px;
+            width: 30%;
+            border: 1px solid blue;
+            border-radius: 10px;
+            background-color: white;
+            color: blue;
+        }
+        #container15>div>i+h3+button+button:hover{
+            background-color: skyblue;
+        }
+        #container15>div>i+h3+button+button+p{
+            color: black;
+            margin-left: 10%;
+        }
+          .c2:nth-child(2){
+          
+            padding-left: 10%;
+         }
+         .c3:nth-child(3){
+          
+          padding-left: 25%;
+       }
+       .c4:nth-child(4){
+          
+          padding-left: 45%;
+       }
+        
+  </style>
+</head>
+<body>
+    <div id="container1">
+           <div>
+            <i class="fa-brands fa-buffer"></i>
+            <h2>Buffer</h2>
+           </div>
+
+
+           <div id="nav">
+           <div>Tools</div>
+           <div>Pricing</div>
+           <div>Blog</div>
+           <div>About</div>
+           <div>Customers</div>
+           </div>
+
+
+
+           <div id="login">
+            <div>Log In</div>
+            <button>Get Started Now</button>
+           </div>
+    </div>
+
+
+
+
+
+
+
+
+     <div id="container2">
+        <div>
+            <h1>Grow your audience on social and beyond</h1>
+            <p>Buffer helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive, marketing tools for ambitious people and teams.</p>
+            <button>Get Started now</button>
+            <button><i class="fa-solid fa-circle-play"></i>Watch Video</button>
+        </div>
+        <div>
+            <img src="https://buffer.com/static/illustrations/social-icons-hero.webp" alt="1">
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+     <div id="container3">
+        <div><i class="fa-solid fa-tree-decorated"></i>Huckyberry</div>
+            <div>FOOD52</div>
+            <div>The Still</div>
+            <div>BURROW</div>
+            <div>Happy Socks</div>
+            <div>Dress Up</div>
+     </div>
+
+
+
+
+
+
+        
+      <div id="container5">
+        <h1>Be where your customers are</h1>
+        <p>People spend, on average, almost 2.5 hours on social media every day. ​​Let them find your brand more easily through these four simple steps:</p>
+      </div>
+
+
+
+
+
+
+
+
+       <div id="container4"></div>
+
+
+
+
+
+
+       <div id="container6">
+        <div>
+            <h3>1. ANALYZE</h1>
+            <h1>Measure your social media performance in a few clicks</h1>
+            <p>See what’s working and deliver high engagement content.</p>
+            <button>Get Started now</button>
+            <button>Learn More</button>
+        </div>
+        <div>
+            <img src="https://buffer.com/static/illustrations/thumb-stop-content-2.webp"alt="1">
+        </div>
+
+      </div>
+
+         
+
+      <div id="container7">
+
+        <div>
+            <img src="https://buffer.com/static/illustrations/collaborate-more-efficiently@2x.webp" alt="1">
+        </div>
+        <div>
+            <h3>2. PLAN AND PUBLISH YOUR CONTENT</h1>
+            <h1>Collaborate and plan your campaigns</h1>
+            <p>Schedule your posts in advance so you can focus on other things.</p>
+            <button>Get Started now</button>
+            <button>Learn More</button>
+        </div>
+       
+         </div>
+
+
+         <div id="container8">
+
+        <div>
+            <h3>3. ENGAGE</h1>
+            <h1>Respond to comments twice as fast</h1>
+            <p>Skip to important comments with the help of labels and hotkeys.</p>
+            <button>Get Started now</button>
+            <button>Learn More</button>
+        </div>
+        <div>
+            <img src="https://buffer.com/static/illustrations/hero-reply@2x-2.webp" alt="1">
+        </div>
+
+         </div>
+
+
+
+
+
+
+
+         
+         <div id="container10">
+            <h3>4. CELEBRATE</h3>
+            <h1>Businesses all over the world trust Buffer to build their brand</h1>
+
+         </div>
+
+
+         <div id="container9">
+            <div>
+               <img src="https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/troy-petrunoff@mobile.jpg" alt="1">
+               <p>For a marketing team with a lot on our plates, Buffer is a crucial tool in our brand-building efforts.</p>
+               <h1>lensbal</h1>
+               <h3>Troy Petrunoff, Marketing Manager</h3>
+            </div>
+           
+            <div>
+                <img src="https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/luis-cancel-huckberry-mobile.jpg" alt="">
+                <p>Buffer has made sharing our story and building our brand on social media so much easier.</p>
+                <h1>Huckyberry</h1>
+                <h3>Luis Cancel, Managing Editor</h3>
+            </div>
+
+           
+            <div>
+                <img src="https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/joe-mercy-for-animals@mobile.jpg" alt="">
+                <p>Buffer saves us, literally, hours and in turn helps us spread our message even further.</p>
+                <h1><i class="fa-solid fa-signal-stream"></i>Mercy for Animals</h1>
+                <h3>Joe Loria, Content Manager</h3>
+            </div>
+
+
+            <div>
+                <img src="https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/rodrigo-hyago-happysocks@mobile.jpg" alt="">
+                <p>Buffer makes it easy for us to monitor all of our engagement and strengthen the connection with our audience.</p>
+                <h1>HappySocks</h1>
+                <h3>Rodrigo Hyago, Social Media Content Manager</h3>
+            </div>
+
+
+            <div>
+                <img src="https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/liz-gillis-dress-up@2x-mobile.jpg" alt="">
+                <p>On social, we need to be fast, efficient, and intentional. Buffer allows us to be exactly that.</p>
+                <h1>Dress Up</h1>
+                <h3>Liz Gillis, Digital Marketer</h3>
+            </div>
+
+
+            <div>
+                <img src="https://static.buffer.com/cdn-cgi/image/w=128,quality=90,format=auto/marketing/static/testimonials/troy-petrunoff@mobile.jpg" alt="1">
+                <p>For a marketing team with a lot on our plates, Buffer is a crucial tool in our brand-building efforts.</p>
+                <h1>lensbal</h1>
+                <h3>Troy Petrunoff, Marketing Manager</h3>
+             </div>
+
+         </div>
+
+
+
+          
+
+
+         <div id="container11">
+            <div>
+                <p id="p1">10 Years</p>
+                <h1>in business</h1>
+            </div>
+            <div>
+                <p id="p2">140,000</p>
+                <h1>users</h1>
+            </div>
+            <div>
+                <p id="p3">100k+</p>
+                <h1>montly blog readers</h1>
+            </div>
+            <div>
+                <p id="p4">1.2m+</p>
+                <h1>social follwers</h1>
+            </div>
+
+           </div>
+
+
+
+
+
+
+           <div id="container12">
+
+            <div>
+                <img src="https://static.buffer.com/cdn-cgi/image/w=640,quality=90,format=auto/marketing/static/team/buffer-team-map-2022@2x.jpg" alt="1">
+            </div>
+            <div>
+                <h1>And we are here to help</h1>
+                <p>Our customer advocates are standing by 24/7 to support you via email and social media. We also have a comprehensive, regularly updated help center for those who prefer to find help themselves.</p>
+                <button>Vist Our help Centre</button>
+            </div>
+           
+             </div>
+
+
+
+
+
+
+
+            
+                   <h3>An official marketing partner of the industry leaders</h3>
+                    <div id="c11">
+                   <img src="https://buffer.com/static/ui/meta-business-partner@2x-2.png" alt="1">
+                    </div>
+                   <div id="c22">
+                   <img src="https://buffer.com/static/ui/pinterest-marketing-partner@2x-2.png" alt="2">
+                   </div>
+
+                   <div id="c33">
+                   <img src="https://buffer.com/static/ui/linkedin-marketing-partner@2x-2.png" alt="3">
+                   </div>
+
+        
+
+
+
+
+
+       <div id="container13" id="imgeset">
+                  <div>
+                   <p>140,000+ people like you use Buffer to build their brand on social media every month</p>
+                    <button>Get Started Now</button>
+                  
+           </div>
+
+
+
+      
+
+
+
+           <div id="container14"> 
+            <div>
+             Buffer
+            </div>
+           
+            <div>
+            <table>
+            <thead>
+             <tr>
+             <th class="c1">Tools</th>
+            
+             <th class="c2">Resources</th>
+             
+             <th class="c3">Support</th>
+             <th class="c4">Company</th>
+           </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td class="c1">Publishing</td>
+               <td class="c2">Blog</td>
+               <td class="c3">Help Centre</td>
+               <td class="c4">About</td>
+             </tr>
+             <tr>
+               <td class="c1">Analysis</td>
+               <td class="c2">Content Libray</td>
+               <td class="c3">Status</td>
+               <td class="c4">Transparency</td>
+             </tr>
+             <tr>
+               <td class="c1">Enagagement</td>
+               <td class="c2">Browser Extension</td>
+               <td class="c3">Changelog</td>
+               <td class="c4">Career</td>
+             </tr>
+             <tr>
+               <td class="c1">Start Page</td>
+               <td class="c2">Free Image Editor</td>
+               <td class="c3">Product Roadmap</td>
+               <td class="c4">press</td>
+             </tr>
+            
+               
+            </tbody>
+            </table>
+           </div>
+       </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+       <div id="container15">
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <h3>Download</h3>
+          <button><i class="fa-brands fa-apple"></i>App Store</button>
+          <button><i class="fa-brands fa-google-play"></i>Google Play</button>
+          <p>copy right @2022 Buffer| Privacy | Terms | Security|</p>
+        </div>
+       
+      </div>
+          
+</body>
+</html>
