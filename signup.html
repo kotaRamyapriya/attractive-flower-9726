@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Signup-page</title>
+      <style>
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+}
+.container1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+.container1{
+  /* display: none; */
+  background: #fff;
+  width: 410px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.container1 .text{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.container1 form{
+  margin-top: -20px;
+}
+.container1 form .data{
+  height: 45px;
+  width: 100%;
+  margin: 40px 0;
+}
+form .data label{
+  font-size: 18px;
+}
+form .data input{
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid silver;
+}
+form .data input:focus{
+  border-color: #3498db;
+  border-bottom-width: 2px;
+}
+form .agreement{
+  margin-top: 8px;
+  text-align: center;
+}
+form .agreement a{
+  color: grey;
+  text-decoration: none;
+}
+form .agreement a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  margin: 30px 0;
+  height: 45px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  z-index: -1;
+  background: -webkit-linear-gradient(right, #1a5095, #10a9eb, #ae3a6a, #c5da0f);
+  transition: all 0.4s;
+}
+form .btn:hover .inner{
+  left: 0;
+}
+form .btn button{
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+form .signup-link{
+  text-align: center;
+}
+form .signup-link a{
+  color: #3498db;
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+      </style>
+   </head>
+   <body>
+      <div class="center">
+         <div class="container1">
+            <div class="text">
+               Signup Form
+            </div>
+            <form>
+               <div class="data">
+                  <label>Email or Phone</label>
+                  <input id="email" type="text" required>
+               </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input id="password" type="password" required>
+               </div>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <button type="submit">Create your account</button>
+               </div>
+               <div class="signup-link">
+                Already have an account? <a href="login.html">Log in</a>
+               </div>
+               <div class="agreement">
+                <a href="#">By clicking "Create your account", you agree to the Terms of Service and Privacy Policy.</a>
+             </div>
+            </form>
+         </div>
+   </body>
+</html>
+
+<script>
+    let form=document.querySelector("form");
+    let signupLS=JSON.parse(localStorage.getItem("signup")) || []
+
+    form.addEventListener("submit",function(event){
+        event.preventDefault();
+        let obj={
+            email:form.email.value,
+            password:form.password.value,
+        }
+        // console.log(obj);
+        if(obj.email=="" || obj.password==""){
+            alert("Field Empty")
+            return
+        }
+        else{
+            signupLS.push(obj);
+            localStorage.setItem("signup",JSON.stringify(signupLS))
+            window.location.href="login.html";
+        }
+    })
+
+</script>
